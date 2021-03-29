@@ -4,6 +4,7 @@ El servicio implementa una base de datos `PostgreSQL`, llamada `challenge` de cu
 
 se deben modificar la credenciales de conexion a la bd en el archivo application.properties del proyecto
 
+
 la base de datos la diseñe segun el problema presentando donde se presento una tabla `vehiculos` con sus campos 
 para las otras 2 tablas mostradas llamas `automovil` y `camion` me parecio que se podian representar
 como caracteristicas asocidas a un vehiculo.
@@ -12,6 +13,8 @@ por lo tanto un `vehiculo` tendra un campo llamada `descripcion` que podran ser 
 y en la tabla `caracteristicas` estaran (valga a redundacia) cada una de las caracteristicas distintivas de cada `vehiculo`
 
 tambien se implento una tabla llamada mantencion que contendra los registros de las mantenciones realizadas a cada vehiculo
+
+#### se adjunta coleccion de postman para consultar los endpoints disponibles, que se describren a continuacion
 
 > El servicio se desplegara en el puerto 8080, se puede consultar de la sigiente forma:
 >> GET ::

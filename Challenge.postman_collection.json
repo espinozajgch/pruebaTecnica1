@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "f9fdbf1e-7a6e-4a3e-b200-27ba47ffb00a",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"Toyota\",\r\n    \"modelo\": \"4x4\",\r\n    \"patente\": \"HFSE12DS\",\r\n    \"año\": \"2020\",\r\n    \"kilometraje\": 50,\r\n    \"cilindrada\": \"400 cc\",\r\n    \"descripcion\": \"4x4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vehiculo/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehiculo",
+						""
+					]
+				},
+				"description": "registro de un nuevo vehiculo"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"marca\": \"Chevrolet\",\r\n    \"modelo\": \"4x4\",\r\n    \"patente\": \"HFSE-1DS\",\r\n    \"año\": \"2021\",\r\n    \"kilometraje\": 50,\r\n    \"cilindrada\": \"450 cc\",\r\n    \"descripcion\": \"4x4\",\r\n    \"caracteristicas\": [\r\n        {\r\n            \"caracteristica\": \"Numero de puertas\",\r\n            \"valor\": \"4\"\r\n        }\r\n    ],\r\n    \"mantenciones\": [\r\n        {\r\n            \"descripcion\": \"se realizo la reparacion del vehiculo\"\r\n        },\r\n        {\r\n            \"descripcion\": \"cambio de neumaticos\"\r\n        },\r\n        {\r\n            \"descripcion\": \"cambio de neumaticos delanteros\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vehiculo/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehiculo",
+						""
+					]
+				},
+				"description": "edicion y asignacion de caracteristicas y/o mantenciones al vehiculo"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vehiculo/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehiculo",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Mantencion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/mantencion/patente/ASDASD3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mantencion",
+						"patente",
+						"ASDASD3"
+					]
+				},
+				"description": "busqueda de registros de mantencion por patente"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehiculo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vehiculo/patente/ASDASD3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehiculo",
+						"patente",
+						"ASDASD3"
+					]
+				},
+				"description": "busqueda de vehiculo por patente"
+			},
+			"response": []
+		}
+	]
+}
