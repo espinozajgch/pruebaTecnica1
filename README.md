@@ -1,8 +1,9 @@
 ## PRUEBA TÉCNICA BACKEND ENGINEER
 
 El servicio implementa una base de datos `PostgreSQL`, de cual se adjunta el dump de la misma
+se deben modificar la credenciales de conexion a la bd en el archivo application.properties del proyecto
 
-la base de datos la diseñe segun el problema presentando donse se presento una tabla `vehiculos` con sus campos 
+la base de datos la diseñe segun el problema presentando donde se presento una tabla `vehiculos` con sus campos 
 para las otras 2 tablas mostradas llamas `automovil` y `camion` me parecio que se podian representar
 como caracteristicas asocidas a un vehiculo.
 
