@@ -31,7 +31,7 @@ los endpoints estan implementados bajo la arquitectura de API REST
 > INSERT : se regista un vehiculo con los campos basicos
 > > POST :: `localhost:8080/vehiculo/`
 
->´{ "marca": "Toyota",
+>`{ "marca": "Toyota",
     "modelo": "4x4",
     "patente": "HFSE-1DS",
     "año": "2020",
@@ -39,7 +39,6 @@ los endpoints estan implementados bajo la arquitectura de API REST
     "cilindrada": "400 cc",
     "descripcion": "Camion"
 }`
-
 
 > UPDATE : utilizando los datos del vehiculo registrado se pueden modificar los mismos y agregar los registros
 > de caracteristicas como registros de mantencion
@@ -67,7 +66,7 @@ los endpoints estan implementados bajo la arquitectura de API REST
             "descripcion": "cambio de neumaticos"
         }
     ]
-}`
+}
 
 > DELETE
 > > DELETE :: `localhost:8080/vehiculo/1`
